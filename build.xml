@@ -19,6 +19,7 @@
   <!-- Target for compiling the java code-->
   <target name="compile" depends="clean, makedir">
     <javac srcdir="${src.dir}" destdir="${build.dir}">
+    </javac>	
     <javac srcdir="${test.dir}" destdir="${build.dir}">
     </javac>	
   </target>
