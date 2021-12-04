@@ -19,6 +19,7 @@
   <!-- Target for compiling the java code-->
   <target name="compile" depends="clean, makedir">
     <javac srcdir="${src.dir}" destdir="${build.dir}">
+    <javac srcdir="${test.dir}" destdir="${build.dir}">
     </javac>	
   </target>
  
@@ -28,7 +29,7 @@
       <classpath refid="classpath.test" />
       <formatter type="brief" usefile="false" />
       <batchtest fork="yes">
-        <fileset dir="${test.dir}">
+        <fileset dir="${build.dir}">
           <include name="**/*Test.java"/>
         </fileset>
       </batchtest>
