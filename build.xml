@@ -23,12 +23,12 @@
   </target>
  
   <!-- Target for testing the java code-->
-  <target name = "test" depends = "compile">
+  <target name="test" depends="compile">
     <junit>
-      <classpath refid = "classpath.test" />
-      <formatter type = "brief" usefile = "false" />
-      <batchtest fork="yes" todir="${reports.tests}">
-        <fileset dir="${test}">
+      <classpath refid="classpath.test" />
+      <formatter type="brief" usefile="false" />
+      <batchtest fork="yes">
+        <fileset dir="${test.dir}">
           <include name="**/*Test.java"/>
         </fileset>
       </batchtest>
