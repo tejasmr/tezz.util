@@ -3,6 +3,7 @@
 <project name="Ant-Build-Project-Test" default="mainTarget" basedir=".">
   <!-- Sets the properties here-->
   <property name="src.dir" location="src" />
+  <property name="test.dir" location="test" />
   <property name="build.dir" location="bin" />
  
   <!-- Target for deleting the existing directories-->
@@ -19,6 +20,19 @@
   <target name="compile" depends="clean, makedir">
     <javac srcdir="${src.dir}" destdir="${build.dir}">
     </javac>	
+  </target>
+ 
+  <!-- Target for testing the java code-->
+  <target name = "test" depends = "compile">
+    <junit>
+      <classpath refid = "classpath.test" />
+      <formatter type = "brief" usefile = "false" />
+      <batchtest fork="yes" todir="${reports.tests}">
+        <fileset dir="${test}">
+          <include name="**/*Test.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
   </target>
  
   <!-- Defualt target to run all targets-->
