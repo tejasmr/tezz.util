@@ -7,6 +7,12 @@
     <version>0.1-SNAPSHOT</version>
     <name>Tezz Utility library for DSA</name>
 
+    <properties>
+         <maven.compiler.source>14</maven.compiler.source>
+         <maven.compiler.target>14</maven.compiler.target>
+    </properties>
+    
+    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
