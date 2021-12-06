@@ -16,4 +16,12 @@
         </dependency>
     </dependencies>
 
+    
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <filtering>false</filtering>
+        </resource>
+    </resources>
+    
 </project>
