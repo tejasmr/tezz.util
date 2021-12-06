@@ -13,10 +13,10 @@ public class CalculatorTest {
     assertTrue("Random sample test", 10 == maxVal);
   }
   
-  @Test
-  public void alwaysFailTest() {
-    assertTrue("This test will always fail", 1 == 2);
-  }
+//   @Test
+//   public void alwaysFailTest() {
+//     assertTrue("This test will always fail", 1 == 2);
+//   }
 
 }
 
