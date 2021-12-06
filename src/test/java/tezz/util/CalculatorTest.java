@@ -1,8 +1,8 @@
 package tezz.util;
 
-import static org.junit.Assert.assertTrue;
+import static junit.Assert.assertTrue;
 
-import org.junit.Test;
+import junit.Test;
 
 public class CalculatorTest {
   @Test
