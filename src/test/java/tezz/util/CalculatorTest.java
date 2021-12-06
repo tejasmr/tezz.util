@@ -8,7 +8,9 @@ public class CalculatorTest {
 
   @Test
   void simpleMaxTest() {
-    assertTrue(10, Calculator.max(new Integer[]{1, 2, 3, 10}));
+    Integer[] arr = new Integer[]{1, 2, 3, 10};
+    Integer maxVal = Calculator.max(arr);
+    assertTrue(10, maxVal);
   }
 
 }
