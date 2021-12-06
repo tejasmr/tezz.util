@@ -12,6 +12,11 @@ public class CalculatorTest {
     Integer maxVal = Calculator.max(arr);
     assertTrue("Random sample test", 10 == maxVal);
   }
+  
+  @Test
+  public void alwaysFailTest() {
+    assertTrue("This test will always fail", 1 == 2);
+  }
 
 }
 
