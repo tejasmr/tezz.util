@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tezz.util</groupId>
-    <artifactId>junit-build</artifactId>
+    <artifactId>lib</artifactId>
     <version>0.1-SNAPSHOT</version>
     <name>Tezz Utility library for DSA</name>
 
