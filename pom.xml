@@ -41,6 +41,9 @@
       <name>GitHub Packages</name>
       <url>https://maven.pkg.github.com/tezz-io/tezz.util</url>
     </repository>
+  </distributionManagement>
+
+  <distributionManagement>
     <repository>
       <id>ossrh</id>
       <name>Central Repository OSSRH</name>
