@@ -1,5 +1,5 @@
 BASEDIR=$(CURDIR)
-OUTPUTDIR=$(BASEDIR)/src/main/
+OUTPUTDIR=$(BASEDIR)/src/main/java
 PACKAGE=tezz.util
 
 html:
