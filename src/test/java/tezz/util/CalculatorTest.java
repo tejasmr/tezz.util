@@ -8,17 +8,17 @@ import org.junit.Test;
 public class CalculatorTest {
 
   @Test
-  public void simpleMaxTest() {
+  public void simpleMaxTest() throws NoElementException {
     assertEquals(10, (int) Calculator.max(new Integer[]{1, 2, 3, 10}));
   }
 
   @Test
-  public void oneElementMaxTest() {
+  public void oneElementMaxTest() throws NoElementException {
     assertEquals(1, (int) Calculator.max(new Integer[]{1}));
   }
 
   @Test
-  public void duplicateMaxValuesTest() {
+  public void duplicateMaxValuesTest() throws NoElementException {
     assertEquals(1, (int) Calculator.max(new Integer[]{1, 1}));
   }
 }
