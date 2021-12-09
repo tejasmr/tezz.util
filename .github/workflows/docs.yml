@@ -9,7 +9,7 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@v2
     - name: Deploy docs
-    - uses: avinal/github-pages-deploy-action@main
+      uses: avinal/github-pages-deploy-action@main
       with:
         GITHUB_TOKEN: ${{ github.token }}
         LANGUAGE: "java"
