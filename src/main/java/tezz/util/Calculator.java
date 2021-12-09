@@ -18,4 +18,19 @@ public class Calculator {
     }
     return maxValue;
   }
+
+  /**
+   * Method that returns the minimum element of an array
+   */
+  public static <T extends Comparable<T>> T min(T[] arr) throws NoElementException {
+    if( arr.length == 0 )
+      throw new NoElementException();
+    T minValue = arr[0];
+    for( int i=1; i<arr.length; i++ ) {
+      if(minValue.compareTo(arr[i]) > 0 ) {
+        minValue = arr[i];
+      }
+    }
+    return minValue;
+  }
 }
