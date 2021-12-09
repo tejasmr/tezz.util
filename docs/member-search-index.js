@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"tezz.util","c":"Calculator","l":"Calculator()","url":"%3Cinit%3E()"},{"p":"tezz.util","c":"CalculatorTest","l":"CalculatorTest()","url":"%3Cinit%3E()"},{"p":"tezz.util","c":"Calculator","l":"max(T[])"},{"p":"tezz.util","c":"CalculatorTest","l":"simpleMaxTest()"}]
