@@ -6,6 +6,9 @@ jobs:
     name: Deploy docs to GitHub Pages
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v2
+    - name: Deploy docs
     - uses: avinal/github-pages-deploy-action@main
       with:
         GITHUB_TOKEN: ${{ github.token }}
