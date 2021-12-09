@@ -21,5 +21,20 @@ public class CalculatorTest {
   public void duplicateMaxValuesTest() throws NoElementException {
     assertEquals(1, (int) Calculator.max(new Integer[]{1, 1}));
   }
+
+  @Test
+  public void simpleMinTest() throws NoElementException {
+    assertEquals(1, (int) Calculator.min(new Integer[]{1, 2, 3, 10}));
+  }
+
+  @Test
+  public void oneElementMinTest() throws NoElementException {
+    assertEquals(1, (int) Calculator.min(new Integer[]{1}));
+  }
+
+  @Test
+  public void duplicateMinValuesTest() throws NoElementException {
+    assertEquals(1, (int) Calculator.min(new Integer[]{1, 1}));
+  }
 }
 
