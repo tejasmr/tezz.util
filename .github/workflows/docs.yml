@@ -15,5 +15,5 @@ jobs:
         LANGUAGE: "java"
         MAKE_COMMAND: "make html" 
         PAGES_BRANCH: "gh-pages"
-        BUILD_FROM: "master"
+        BUILD_FROM: "main"
         DOCS_FOLDER: "docs"
