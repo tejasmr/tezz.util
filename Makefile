@@ -1,5 +1,5 @@
 BASEDIR=$(CURDIR)
-OUTPUTDIR=$(BASEDIR)/docs 
+OUTPUTDIR=$(BASEDIR)/docs
 PACKAGE=tezz.util
 
 html:
